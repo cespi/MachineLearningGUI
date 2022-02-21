@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>Project M</title>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        <!-- files div -->
+        <div class="Files">
+            <div class="Files-sub">
+                <label for="tf">Training File:</label>
+                <input style="outline: auto;" id="tf" type="file">
+            </div>
+            <div class="Files-sub">
+                <label for="af">Application File:</label>
+                <input style="outline: auto;" id="af" type="file">
+            </div>
+        </div>
+        <!-- slider -->
+        <div class="Slider">
+            <p>Value: <span id="sl-out"></span></p>
+            <input type="range" id="sl">
+            <script>
+                var slider = document.getElementById("sl");
+                var output = document.getElementById("sl-out");
+                output.innerHTML = slider.value;
+
+                slider.oninput = function() {
+                output.innerHTML = this.value;
+                }
+            </script>
+        </div>
+        <!-- matrix -->
+        <div class="Matrix">
+            <p>Click Button</p>
+            <button>Training Matrix</button>
+            <br>
+            <input type="checkbox" id="norm">
+            <label for="norm">Normalized?</label>
+        </div>
+        <!-- results? -->
+        <div class="results">
+            <div id="x-out">
+                <output >X1 <br>X2 <br>X3 <br>... <br>... <br>Y</output>
+            </div>
+            <output id="shot-avg">Shot Avarage</output>
+        </div>
+        <!-- result settings -->
+        <div class="results-settings">
+            <div id="x">
+                <label for="x1">X1 in column</label>
+                <input type="number" id="x1">
+            </div>
+            <div id="x">
+                <label for="x2">X2 in column</label>
+                <input type="number" id="x2">
+            </div>
+            <div id="x">
+                <label for="x3">X3 in column</label>
+                <input type="number" id="x3">
+            </div>
+            <div id="x">
+                <label for="lc">Label in column</label>
+                <input type="number" id="lc">
+            </div>
+            <div id="x">
+                <label for="nl"># of Labels</label>
+                <input type="number" id="nl">
+            </div>
+            
+        </div>
+        <div class="dimentions">
+            <div>
+                <input type="radio" id="1d">
+                <label for="1d">1D</label>
+            </div>
+            <div>
+                <input type="radio" id="2d">
+                <label for="2d">2D</label>
+            </div>
+            <div>
+                <input type="radio" id="3d">
+                <label for="3d">3D</label>
+            </div>
+            <div>
+                <input type="radio" id="ad">
+                <label for="ad">All D</label>
+                <button>Define/Check Matrix X</button>
+            </div>
+            <div>
+                <button style="background-color:chartreuse;">Output</button>
+            </div>     
+        </div>
+        <!-- graphing -->
+        <div style="position: relative; width: 100%;" class="graphing">
+            <label for="mth">Method</label>
+            <select id="mth" aria-placeholder="Select Method">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+            </select>
+            <button style="left: 150px; margin-left: 27%;">Run ML Alg.</button>
+            <p class="srLabels">Score</p>
+            <p class="srLabels">Runtime</p>
+            <div></div>
+            <div class="graph-table">
+                <div class="graph-type">
+                    <button id="tb-cell">Histogram</button>
+                    <button id="tb-cell">1DScatter</button>
+                    <button id="tb-cell">2DScatter</button>
+                    <button id="tb-cell">3DScatter</button>
+                </div>
+                <div class="averages">
+                    <input type="checkbox" id="AS-avg">
+                    <label for="AS-avg">Average Shots <br></label>
+                    <input type="checkbox" id="ASRT-avg">
+                    <label for="ASRT-avg">Average Shots Randomized Training<br></label>
+                    <input type="checkbox" id="ASRX-avg">
+                    <label for="ASRX-avg">Average Shots Randomized Xvalidation<br></label>
+                    <input type="checkbox" id="ASNRT-avg">
+                    <label for="ASNRT-avg">Average Shots Normalized Randomized Training<br></label>
+                    <input type="checkbox" id="ASNRX-avg">
+                    <label for="ASNRX-avg">Average Shots Normalized Randomized Xvalidation<br></label>
+                    <input type="checkbox" id="FS-avg">
+                    <label for="FS-avg">Full Shots<br></label>
+                </div>
+                <div class="graph-preds">
+                    <button id="tb-cell">HistogramPred</button>
+                    <button id="tb-cell">1DScatterPred</button>
+                    <button id="tb-cell">2DScatterPred</button>
+                    <button id="tb-cell">3DScatterPred</button>
+                    <button id="tb-cell">QuickPlot_ppt</button>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
+
+
