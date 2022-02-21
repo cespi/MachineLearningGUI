@@ -1,0 +1,140 @@
+body {
+    background-color:lightsteelblue;
+}
+
+.Files {
+    display: block;
+    float: left;
+    width: 40%;
+    margin-right: 140px;
+}
+
+.Files-sub {
+    margin-top: 10px;
+}
+
+.Slider {
+    display: block;
+    float: left;
+    margin-right: 10%;
+}
+
+.matrix {
+    display: block;
+    float: left;
+}
+
+#norm {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.results {
+    clear: both;
+}
+
+#x-out {
+    width: 50%;
+    outline: auto;
+    background-color: aliceblue;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#shot-avg {
+    width: 20%;
+    height: auto;
+    border-bottom: 20px;
+    outline: auto;
+    background-color:lightgray;
+}
+
+#x {
+    display: block;
+    float: left;
+}
+
+#x1 {
+    margin-left: 20px;
+    margin-bottom: 1%;
+}
+
+#x2 {
+    margin-left: 20px;
+    margin-bottom: 1%;
+}
+
+#x3 {
+    margin-left: 20px;
+    margin-bottom: 1%;
+}
+
+#lc {
+    margin-left: 3px;
+    margin-bottom: 1%;
+}
+
+#nl {
+    margin-left: 36px;
+}
+
+.results-settings {
+    display: block;
+    width: 30%;
+}
+
+.dimentions {
+    display: inline-block;
+    padding-left: 20%;
+    margin-bottom: 4%;
+}
+
+#mth {
+    clear: both;
+    /* position: absolute; */
+    left: 0%;
+    padding-right: 5%;
+    margin-left: 1%;
+}
+
+.srLabels {
+    display:inline-flex;
+    margin-left: 10%;
+}
+
+.graph-table {
+    position: relative;
+    margin-top: 1.25%;
+}
+
+.graph-type {
+    width: 8%;
+    float: left;
+    display: block;
+    position: absolute;
+    clear: both;
+}
+
+.averages {
+    width: 35%;
+    float: left;
+    display: block;
+    padding-left: 100px;
+    margin-right: 1%;
+    padding-bottom: 2%;
+    position: absolute;
+}
+
+.graph-preds {
+    width: 10%;
+    float: left;
+    display: block;
+    left: 150px;
+    padding-left: 30%;
+    padding-bottom: 2%;
+    position: absolute;
+}
+
+#tb-cell {
+    margin: 2%;
+}
