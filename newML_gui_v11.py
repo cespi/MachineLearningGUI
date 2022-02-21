@@ -6,14 +6,14 @@ from tkinter import Tk, ttk, Frame, Button, Label, Entry, Text, Checkbutton, Rad
 import numpy as np
 import matplotlib.pyplot as plt
 
-import read_text_file_omega as rd
+import read_text_file as rd
 import read_header_line as rhl
 
 import scatterg as a2dscatter
 import scatterg3D as a3dscatter
 import Normalize_Features as NF
 import Randomize_training_samples as RTS
-#import Gather_Attrib_NoiseStatistics as SA
+#import Gather_Attrib_Statistics as SA
 
 #Creating GUI 
 class Compact_Frame(Frame):        
