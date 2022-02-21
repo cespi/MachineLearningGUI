@@ -10,4 +10,13 @@ How to run:
 6)  It is recomended to use normaliation to improve performance. 
 7)  You may choose to activate every column to use all features. At the moment, there is no option to select more than just 3 input feature and less than all. 
 8)  Use the method menu to selct the Sklearn algorithm and click on Run ML Alg to measure its performance and run time. 
-9) 
+9) Refer to the pictures for examples
+![Run with example file](ExampleRun.png "Screen Grab1")
+
+Histograms
+![Histogram Training](Histogram_Traininglabels.png "Hist Train")
+![Histogram Predicted](Histogram_Predictedlabels.png "Hist Predicted")
+
+3D Scatters
+![3D Training](3D_training.png "3D Scatter Train")
+![3D Predicted](3Dpredicted.png "3D Scatter Predicted")
